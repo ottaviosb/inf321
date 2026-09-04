@@ -1,0 +1,5 @@
+# Normaliza fins de linha: LF no repositório, nativo no working directory
+* text=auto
+
+# Binários
+*.png binary
