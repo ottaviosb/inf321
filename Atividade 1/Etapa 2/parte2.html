@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>INF 321 - Atividade 1: Página de Produtos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Produtos</h1>
+            <p>Catálogo com os produtos disponíveis na loja. Consulte os itens em estoque
+                e utilize o formulário ao final da página para cadastrar um novo produto.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Produtos disponíveis</h2>
+                <ul>
+                    <li>
+                        <img src="iphone.jpg" alt="Iphone 17 Pro Max" width="200" height="200">
+                        <h3>Iphone 17 Pro Max</h3>
+                        <p><strong>R$ 9.999,90</strong></p>
+                        <p><a href="/iphone17">Ver detalhes</a></p>
+                    </li>
+                    <li>
+                        <img src="s26ultra.jpg" alt="Samsung S26 Ultra" width="200" height="160">
+                        <h3>Samsung S26 Ultra</h3>
+                        <p><strong>R$ 7.999,90</strong></p>
+                        <p><a href="/s26ultra">Ver detalhes</a></p>
+                    </li>
+                    <li>
+                        <img src="notebook.jpg" alt="Notebook Acer Predator 16 polegadas" width="200" height="160">
+                        <h3>Notebook Acer Predator 16 polegadas</h3>
+                        <p><strong>R$ 15.999,00</strong></p>
+                        <p><a href="/notebook">Ver detalhes</a></p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Cadastrar produto</h2>
+                <form action="/cadastro" method="post">
+                    <div>
+                        <label for="nome">Nome do produto:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div>
+                        <label for="preco">Preço (R$):</label>
+                        <input type="number" id="preco" name="preco">
+                    </div>
+                    <div>
+                        <label for="imagem">URL da imagem:</label>
+                        <input type="url" id="imagem" name="imagem">
+                    </div>
+                    <div>
+                        <label for="detalhes">Link para detalhes:</label>
+                        <input type="url" id="detalhes" name="detalhes">
+                    </div>
+                    <button type="submit">Cadastrar produto</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Minha loja</p>
+        </footer>
+    </body>
+</html>
