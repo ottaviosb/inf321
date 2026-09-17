@@ -7,3 +7,5 @@ Atividades da disciplina INF 321 (UFV).
 - Atividade 1
   - [Etapa 1](Atividade%201/Etapa%201/parte1.html)
   - [Etapa 2](Atividade%201/Etapa%202/parte2.html)
+- Atividade 2
+  - [Etapa 1](Atividade%202/index.html)

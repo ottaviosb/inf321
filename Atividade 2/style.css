@@ -159,3 +159,24 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+    .produtos {
+        display: block;
+    }
+
+    .produto {
+        width: 200px;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    table {
+        width: 280px;
+    }
+
+    input {
+        width: 200px;
+    }
+}
