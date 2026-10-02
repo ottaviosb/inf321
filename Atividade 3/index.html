@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INF 321 - Atividade 3: Front-End / JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Produtos</h1>
+            <p>Catálogo com os produtos disponíveis na loja. Consulte os itens em estoque
+                e utilize o formulário ao final da página para cadastrar um novo produto.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Produtos disponíveis</h2>
+                <div class="centro">
+                    <input type="text" id="busca" placeholder="Digite um produto...">
+                    <button id="botao-busca">Buscar</button>
+                </div>
+                <div class="centro">
+                    <p id="mensagem" class="mensagem escondido">Produto adicionado ao carrinho!</p>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="iphone.jpg" alt="Iphone 17 Pro Max" width="200" height="200">
+                        <h3>Iphone 17 Pro Max</h3>
+                        <p><strong>R$ 9.999,90</strong></p>
+                        <p><a href="/iphone17">Ver detalhes</a></p>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="s26ultra.jpg" alt="Samsung S26 Ultra" width="200" height="160">
+                        <h3>Samsung S26 Ultra</h3>
+                        <p><strong>R$ 7.999,90</strong></p>
+                        <p><a href="/s26ultra">Ver detalhes</a></p>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="notebook.jpg" alt="Notebook Acer Predator 16 polegadas" width="200" height="160">
+                        <h3>Notebook Acer Predator 16 polegadas</h3>
+                        <p><strong>R$ 15.999,00</strong></p>
+                        <p><a href="/notebook">Ver detalhes</a></p>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+            </section>
+                        <section>
+                <h2>Comparativo</h2>
+                <div class="centro">
+                    <table>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Categoria</th>
+                            <th>Preço</th>
+                        </tr>
+                        <tr>
+                            <td>Iphone 17 Pro Max</td>
+                            <td>Smartphone</td>
+                            <td>R$ 9.999,90</td>
+                        </tr>
+                        <tr>
+                            <td>Samsung S26 Ultra</td>
+                            <td>Smartphone</td>
+                            <td>R$ 7.999,90</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook Acer Predator 16 polegadas</td>
+                            <td>Notebook</td>
+                            <td>R$ 15.999,00</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2>Cadastrar produto</h2>
+                <div class="centro">
+                    <form action="/cadastro" method="post">
+                        <div>
+                            <label for="nome">Nome do produto:</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div>
+                            <label for="preco">Preço (R$):</label>
+                            <input type="number" id="preco" name="preco">
+                        </div>
+                        <div>
+                            <label for="imagem">URL da imagem:</label>
+                            <input type="url" id="imagem" name="imagem">
+                        </div>
+                        <div>
+                            <label for="detalhes">Link para detalhes:</label>
+                            <input type="url" id="detalhes" name="detalhes">
+                        </div>
+                        <button type="submit">Cadastrar produto</button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h2>Fale Conosco</h2>
+                <div class="centro">
+                    <form id="form-contato">
+                        <div>
+                            <label for="contato-nome">Nome *</label>
+                            <input type="text" id="contato-nome" name="contato-nome" placeholder="Digite seu nome">
+                            <p id="erro-nome" class="erro escondido">Este campo é obrigatório.</p>
+                        </div>
+                        <div>
+                            <label for="contato-email">E-mail *</label>
+                            <input type="email" id="contato-email" name="contato-email" placeholder="Digite seu e-mail">
+                            <p id="erro-email" class="erro escondido">Este campo é obrigatório.</p>
+                        </div>
+                        <div>
+                            <label for="contato-mensagem">Mensagem *</label>
+                            <textarea id="contato-mensagem" name="contato-mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+                            <p id="erro-mensagem" class="erro escondido">Este campo é obrigatório.</p>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Minha loja</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

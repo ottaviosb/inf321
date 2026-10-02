@@ -16,3 +16,6 @@ $RECYCLE.BIN/
 # Logs e temporários
 *.log
 *.tmp
+
+# Material de estudo (slides das provas)
+Prova*/

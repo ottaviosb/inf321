@@ -1,0 +1,246 @@
+header {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #cfcfcf;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Cards */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+}
+
+.produto {
+    background-color: white;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.produto strong {
+    color: green;
+    font-size: 20px;
+}
+
+/* Formulário */
+
+form {
+    background-color: white;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+input {
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+input:focus {
+    outline: 2px solid blue;
+}
+
+/* Botões */
+
+button {
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tabela */
+
+table {
+    background-color: white;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+th {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+td {
+    background-color: #cfcfcf;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .produtos {
+        display: block;
+    }
+
+    .produto {
+        width: 200px;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    table {
+        width: 280px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    #busca {
+        width: 140px;
+    }
+
+    textarea {
+        width: 200px;
+    }
+}
+
+/* Mensagem de sucesso */
+
+.mensagem {
+    background-color: #d4f8d4;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.escondido {
+    display: none;
+}
+
+/* Busca */
+
+#busca {
+    margin: 0 10px;
+}
+
+/* Formulário de contato */
+
+textarea {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: 2px solid blue;
+}
+
+.erro {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.invalido {
+    border: 1px solid red;
+}
+
+.invalido:focus {
+    outline: 2px solid red;
+}
+
+/* Botão ativo (produto no carrinho) */
+
+.ativo {
+    background-color: green;
+}
