@@ -1,0 +1,39 @@
+/* This file is for your main application CSS */
+
+/* Atividade 4: página de saudação (lib/hello_web/controllers/hello_html/saudacao.html.heex)
+   Os nomes .pagina e .cartao evitam a classe .card que já existe no default.css. */
+
+/* Altura em % é relativa ao elemento pai: html e body precisam ocupar a janela
+   para que .pagina (height: 100%) centralize o cartão na vertical. */
+html,
+body {
+  height: 100%;
+}
+
+.pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #e8e9ee;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.cartao {
+  background: #9ca0ac;
+  padding: 3rem 5rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.cartao h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1f33;
+}
+
+.cartao .aceno {
+  margin: 1rem 0 0;
+  font-size: 2.5rem;
+}

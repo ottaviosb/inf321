@@ -11,3 +11,5 @@ Atividades da disciplina INF 321 (UFV).
   - [Etapa 1](Atividade%202/index.html)
 - Atividade 3
   - [Etapa 1](Atividade%203/index.html)
+- Atividade 4
+  - [Rota multilíngue dinâmica (Phoenix)](Atividade%204/README.md)
