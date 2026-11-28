@@ -1,0 +1,11 @@
+<Layouts.app flash={@flash}>
+  <h1>Vídeo <%= @video.id %></h1>
+  <div class="detalhes-video">
+    <p><b>ID:</b> <%= @video.id %></p>
+    <p><b>Título:</b> <%= @video.title %></p>
+    <p><b>URL:</b> <%= @video.url %></p>
+  </div>
+  <a href={@video.url} target="_blank" class="player">
+    <span class="botao-play">▶</span>
+  </a>
+</Layouts.app>
